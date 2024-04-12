@@ -398,13 +398,13 @@ a {
 .work {
   padding-top: 80px;
 }
-.work__container--title {
+.work__container--title, .values__title {
   padding-top: 50px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   --tw-text-opacity: 1;
 }
-.work__container--heading, .steps__container--heading {
+.work__container--heading, .steps__container--heading, .values__sub-title {
   font-weight: 900;
   font-family: Inter, system-ui;
   --tw-text-opacity: 1;
@@ -539,3 +539,5 @@ font-size: 1.25rem;
 {
   margin-left: 1.5rem;
 }
+
+/* Values */
