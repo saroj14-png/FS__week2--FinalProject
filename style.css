@@ -328,7 +328,7 @@ h5:hover {
   color: rgb(36 62 99 / var(--tw-text-opacity));
 }
 .features__container--para {
-  width: 862px;
+  max-width: 862px;
 }
 .features__container--para,
 .pricing__para {
