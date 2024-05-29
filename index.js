@@ -44,3 +44,10 @@ dropButtons.forEach(function (dropButton) {
     dropdownContent.classList.toggle("show");
   });
 });
+
+function openMenu() {
+  document.body.classList += " menu--open";
+}
+function closeMenu() {
+  document.body.classList.remove("menu--open");
+}
