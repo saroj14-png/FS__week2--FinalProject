@@ -175,7 +175,7 @@ h5:hover {
 .header__container--heading,
 .main__container--heading {
   font-size: 3rem;
-  color: rgb(26, 32, 44);
+  color: rgb(36 62 99 / var(--tw-text-opacity));
   opacity: 1;
   margin-bottom: 0;
   font-weight: 700;
@@ -320,12 +320,6 @@ h5:hover {
   line-height: 36px;
   text-transform: uppercase;
   opacity: 1;
-}
-.features__container--heading,
-.pricing__subtitle {
-  font-weight: 900;
-  font-size: 3rem;
-  color: rgb(36 62 99 / var(--tw-text-opacity));
 }
 .features__container--para {
   max-width: 862px;
@@ -491,8 +485,8 @@ h5:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 50%;
-  margin-right: 96px;
+  width: 55%;
+  margin-right: 90px;
   position: relative;
 }
 .work__container--col2 {
