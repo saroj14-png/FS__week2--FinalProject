@@ -175,7 +175,6 @@ h5:hover {
 .header__container--heading,
 .main__container--heading {
   font-size: 3rem;
-  color: rgb(36 62 99 / var(--tw-text-opacity));
   opacity: 1;
   margin-bottom: 0;
   font-weight: 700;
@@ -473,8 +472,9 @@ h5:hover {
 .steps__container--heading,
 .values__sub-title,
 .faqs__description--heading,
-.features__container--heading {
+.features__container--heading, .pricing__subtitle {
   font-weight: 900;
+   --tw-text-opacity: 1;
   color: rgb(36 62 99 / var(--tw-text-opacity));
   line-height: 1.25;
   font-size: 3rem;
@@ -1334,6 +1334,9 @@ h5:hover {
   justify-content: space-betweecen;
   align-items: center;
   width: 1024px;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-top: 70px;
 }
 
 .description__title--wrapper {
@@ -1513,8 +1516,6 @@ h5:hover {
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 0.4px;
-  margin: 0 0 0 8px;
-  padding: 0 0 4px;
   cursor: pointer;
 }
 .footer__copyright {
