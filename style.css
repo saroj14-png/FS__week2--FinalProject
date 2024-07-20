@@ -320,16 +320,18 @@ h5:hover {
   max-width: 862px;
 }
 .features__container--para,
-.pricing__para {
+.pricing__para, .faqs__description--para {
   margin-top: 48px;
   margin-bottom: 48px;
   font-size: 27px;
   font-weight: 500;
   color: rgb(124, 139, 161);
   margin: 0 auto;
+  display: flex;
   text-align: center;
   margin-top: 1rem;
-  line-height: 1.625;
+  line-height: 1.6;
+  --tw-text-opacity: 1;
 }
 #services {
   margin: 0 auto;
@@ -1129,18 +1131,7 @@ h5:hover {
   letter-spacing: 1px;
   justify-content: center;
 }
-.faqs__description--para {
-  font-size: 25px;
-  margin-top: 1rem;
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  width: 863px;
-  display: flex;
-  margin: 0 auto;
-  text-align: center;
-  color: #7c8ba1;
-  line-height: 1.6;
-}
+
 .faqs__collapsible--container {
   display: flex;
   flex-direction: column;
@@ -2131,7 +2122,6 @@ h5:hover {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    line-height: 60px;
   }
   .work__container--col2 {
     height: auto;
