@@ -962,7 +962,7 @@ h5:hover {
 /*testimonial*/
 .testimonial__container {
   max-width: 1280px;
-  padding: 150px 0;
+
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1000,6 +1000,7 @@ h5:hover {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin: 0 auto;
 }
 /*-------------------------------*/
 .cust__details {
@@ -1102,6 +1103,7 @@ h5:hover {
 .review.active {
   display: block;
 }
+
 /*---------------------------------------------------FAQS-------------------------------------------------------*/
 .faqs__conatainer {
   position: relative;
@@ -2245,7 +2247,8 @@ padding:20px;
     }
   /*FAQ */
   .faqs__description {
-    margin-top: 60px;
+    padding-top: 60px;
+    margin: 0 auto;
     max-width: 70%;
   }
   .faqs__description--title,
@@ -2290,7 +2293,7 @@ padding:20px;
     justify-content: space-between;
     flex-wrap: wrap;
     height: 398px;
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
   }
   .footer__bottom {
