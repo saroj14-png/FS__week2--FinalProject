@@ -289,7 +289,6 @@ h5:hover {
   color: rgb(226, 232, 240);
   padding-right: 64px;
   opacity: 0.5;
-  padding-right: 8rem;
 }
 /*-------------------------------------------Features--------------------------------*/
 .features {
@@ -468,7 +467,8 @@ h5:hover {
 .values__sub-title,
 .faqs__description--heading,
 .features__container--heading,
-.pricing__subtitle {
+.pricing__subtitle,.steps__sub-title,
+.test__sub-title {
   font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(36 62 99 / var(--tw-text-opacity));
@@ -547,12 +547,8 @@ h5:hover {
 }
 .steps__sub-title,
 .test__sub-title {
-  font-size: 64px;
   margin: 24px 0;
-  --tw-text-opacity: 1;
-  color: rgb(36 62 99 / var(--tw-text-opacity));
   margin-bottom: 0;
-  font-weight: 900;
 }
 .right-column__img--laptop,
 .values__right--img {
@@ -1059,7 +1055,6 @@ h5:hover {
 .cust__description {
   margin-bottom: 2.5rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
   font-weight: 500;
   line-height: 1.625;
   --tw-text-opacity: 1;
@@ -1153,7 +1148,7 @@ h5:hover {
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
-  margin-top: 400px;
+  margin-top: 390px;
 }
 .faq__question--area {
   width: 100%;
@@ -1306,7 +1301,7 @@ h5:hover {
   max-width: 1280px;
   background-color: #6415ff;
   border-radius: 20px;
-  height: 490px;
+  height:auto;
   position: relative;
   overflow: hidden;
 }
@@ -1492,6 +1487,7 @@ h5:hover {
   font-weight: 900;
   letter-spacing: 0.4px;
   cursor: pointer;
+  margin-left: 10px;
 }
 .footer__copyright {
   display: flex;
@@ -1755,7 +1751,7 @@ h5:hover {
     max-width: 700px;
   }
   .work__container--col1 {
-    margin-right: 0px;
+    margin-right: 10px;
   }
   .work__container--col1,
   .work__container--col2,
@@ -1782,6 +1778,7 @@ h5:hover {
   .work__container--col2 {
     height: 500px;
   }
+  
   .btn,
   .values__button {
     width: 220px;
@@ -1915,6 +1912,10 @@ h5:hover {
   ul {
     display: none;
   }
+  .container {
+margin: 0 auto;
+padding:20px;
+  }
   .row {
     max-width: 100%;
     margin: 0 auto;
@@ -1926,10 +1927,15 @@ h5:hover {
     margin: 0 auto;
     padding: 1rem;
   }
-  .logo__text {
-    font-size: 1rem; /* Adjust the font size of the logo text */
+  .logo__container {
+    margin-right: 0;
   }
-
+  .logo__img {
+    margin-right: 0.30rem;
+  }
+  .logo__text {
+    font-size: 1.2rem; /* Adjust the font size of the logo text */
+  }
   /*hamburger menu */
   .btn__menu {
     background-color: transparent;
@@ -2016,15 +2022,37 @@ h5:hover {
   }
   .header__brand--name--para,
   .header__container--para {
-    text-align: left;
+    text-align: center;
+  }
+  .header__input {
+    padding: 0;
+    height:70px;
+  }
+  .header__inside .header__input
+  {
+   padding: 0 0 0 29px; 
+  }
+  .header__button{
+    position: relative;
+    width:100%;
+  }
+  .header__inside--img
+  {
+    padding-right: 0;
   }
   .header__img,
-  .test__img {
+  .test__img{
     padding-top: 30px;
     display: flex;
     align-self: center;
     height: auto;
     margin: 0 auto;
+  }
+  .header__container--heading, .features__container--heading,.work__container--heading, .steps__container--heading, .faqs__description--heading, .features__container--heading, .values__sub-title, .pricing__subtitle, .test__sub-title{
+    font-size: 2rem;
+    max-width: 100%;
+    text-align: center;
+    line-height: 80px;
   }
   /*features*/
   .features {
@@ -2038,8 +2066,8 @@ h5:hover {
     margin: 0 auto;
   }
   .icons {
-    width: 15px;
-    height: 15px;
+    width: 35px;
+    height: 35px;
   }
   .service__column {
     padding: 1.5rem 0.5rem;
@@ -2052,11 +2080,7 @@ h5:hover {
     text-align: left;
   }
   /*Quality work*/
-  .work__container--heading,
-  .header__container--heading {
-    max-width: 100%;
-    text-align: center;
-  }
+  
   .quality__work,
   .steps__container,
   .pricing__description--container,
@@ -2088,12 +2112,15 @@ h5:hover {
   .faqs__description--heading,
   .description__title--wrapper,
   .starting__button--container,
-  .features__container--heading {
+  .features__container--heading,
+  .steps__sub-title, .test__sub-title {
     display: flex;
     flex-direction: column;
     align-self: center;
     margin: 0 auto;
     width: 100%;
+    text-align: center;
+    line-height: 60px;
   }
   .work__container--col2 {
     height: auto;
@@ -2111,9 +2138,13 @@ h5:hover {
   .test__img {
     max-width: 100%;
   }
+  .work__img, .values__right--img{
+    max-width: 310px;
+  }
+
   /*steps*/
   .steps__DecoratorBlob {
-    right: 150px;
+    right: 45px;
     bottom: -30px;
   }
   .right__column--container,
@@ -2126,12 +2157,22 @@ h5:hover {
     margin-top: 0px;
     margin: 0 auto;
   }
+  .list__title {
+    text-align: left;
+  }
   /*values*/
   .values__right {
     padding-top: 50px;
   }
   .values__right--img {
     margin: 0 auto;
+  }
+  .values__list--container {
+    display: contents;
+    height: fit-content;
+  }
+  .values__affordable, .values__professional {
+    width: 100%;
   }
   /*Pricing*/
   .pricing__subtitle {
@@ -2155,6 +2196,10 @@ h5:hover {
     margin: 0 auto;
     margin-top: 20px;
   }
+  .plan__container--bottom {
+    padding-left: 0rem; 
+     padding-right: 0rem;
+  }
   /*testimonial*/
   .testimonial__container {
     padding-top: 0px;
@@ -2177,17 +2222,40 @@ h5:hover {
     display: flex;
     margin: 0;
   }
+  review.active {
+    max-width: 280px;
+  }
+  .test_review-row {
+    display:inline
+  }
+    .cust__container {
+    width: 70%;
+    margin-left: 70px;
+    }
+    .cust__description {
+  max-width: 340px;
+  margin: o auto;
+    }
+    test
   /*FAQ */
   .faqs__description {
     margin-top: 60px;
+    max-width: 70%;
   }
   .faqs__description--title,
   .faqs__description--para {
     padding: 10px 0;
+    max-width: 70%;
   }
   .faqs__collapsible {
     width: 100%;
     height: auto;
+  }
+  .faqs__collapsible--container {
+  margin-top: 490px;
+  }
+   .question {
+    font-size: 28px;
   }
   /*started*/
   .starting__button--container {
@@ -2196,7 +2264,7 @@ h5:hover {
   }
   .starting__title {
     font-size: 1rem;
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 15px 0;
   }
@@ -2204,14 +2272,60 @@ h5:hover {
   .starting__button--contact {
     margin: 0;
     margin-top: 15px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  }
+  .GetStarted__DecoratorBlob1, .GetStarted__DecoratorBlob2{
+    display: none;
   }
   /*footer*/
   .footer__description {
-    margin-right: 20px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 398px;
+    max-width: 75%;
+    margin: 0 auto;
   }
   .footer__bottom {
     margin-left: 10px;
     margin-right: 10px;
+    max-width: 350px;
+    margin: 0 auto;
   }
+ .footer__logo--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.footer__logo--img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.footer__logo--name {
+  color: #f7fafc;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  color: #cbd5e0;
+  font-size: 10px;
+  --tw-text-opacity: 1;
+  line-height: 24px;
+  font-weight: 500;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.footer__socials a{
+  max-width:  40px;
+}
+}
+
