@@ -154,59 +154,7 @@ h5:hover {
 .menu__backdrop {
   display: none;
 }
- /*hamburger menu */
-  .btn__menu {
-    background-color: transparent;
-    font-size: 40px;
-    border: none;
-    color: #7342d6;
-    display: block;
-  }
-  .menu__backdrop {
-    position: absolute;
-    background-color: #242424;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   visibility: hidden;
-    transition: all 300ms ease;
-    opacity: 0;
-    transform: translate(100%);
-  }
-  .menu--open {
-    max-height: 100vh;
-    overflow: hidden;
-    display: flex;
-  }
-  .menu--open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(0);
-  }
-  .menu__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu__list {
-    padding: 32px 0;
-  }
-  .menu__link {
-    color: white;
-    font-size: 40px;
-  }
-  .btn__menu--close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    padding: 8px;
-    color: white;
-  }
+
 /*header section */
 .purple {
   color: rgb(100, 21, 255);
@@ -1416,11 +1364,6 @@ h5:hover {
   left: -170px;
   height: 20rem;
   width: 20rem;
-  --tw-translate-x: -5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-translate-y: 8rem;
   --tw-text-opacity: 1;
   color: rgb(80 17 204 / var(--tw-text-opacity));
   opacity: 0.5;
@@ -1431,21 +1374,12 @@ h5:hover {
   right: -100px;
   height: 20rem;
   width: 20rem;
-  --tw-translate-x: 5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-translate-y: -16rem;
   --tw-text-opacity: 1;
   color: rgb(80 17 204 / var(--tw-text-opacity));
   opacity: 0.5;
   display: block;
 }
 /*Footer*/
-#footer {
-  background-color: #6415ff;
-  width: 100%;
-}
 .footer__container {
   padding: 78px 0;
   background-color: #6415ff;
@@ -1657,7 +1591,7 @@ h5:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-   visibility: hidden;
+    visibility: hidden;
     transition: all 300ms ease;
     opacity: 0;
     transform: translate(100%);
@@ -1920,6 +1854,7 @@ h5:hover {
     margin-right: 35px;
     margin-left: 35px;
   }
+
   .footer__bottom {
     margin-left: 20px;
     margin-right: 20px;
