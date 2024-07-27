@@ -1659,7 +1659,6 @@ position: absolute;
   .work__container--col2 {
     height: 500px;
   }
-
   .btn,
   .values__button {
     width: 280px;
@@ -1799,10 +1798,11 @@ position: absolute;
     padding: 20px;
   }
   .row {
-    max-width: 100%;
+    max-width: 550px;
     margin: 0 auto;
     width: 100%;
     flex-direction: column;
+    overflow: hidden;
   }
   .nav__container {
     width: 100%;
@@ -1978,7 +1978,9 @@ position: absolute;
   .values__right--img {
     max-width: 310px;
   }
-
+  .features_svg {
+    display: none;
+  }
   /*steps*/
   .steps__DecoratorBlob {
     right: 67px;
