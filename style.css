@@ -1025,11 +1025,7 @@ h5:hover {
   color: rgb(124 139 161 / var(--tw-text-opacity));
 }
 /**/
-.pointer {
-  height: 1rem;
-  width: 1rem;
-  stroke-width: 3;
-}
+
 .cust__photo {
   height: 5rem;
   width: 5rem;
@@ -1070,9 +1066,6 @@ h5:hover {
   background-color: rgb(237 242 247 / var(--tw-bg-opacity));
   padding: 1rem;
   --tw-text-opacity: 1;
-  color: rgb(100 21 255 / var(--tw-text-opacity));
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform;
   transition-duration: 300ms;
   display: flex;
   align-content: center;
@@ -1080,6 +1073,11 @@ h5:hover {
   flex-direction: column;
   width: 50%;
   cursor: pointer;
+}
+.pointer {
+  height: 1rem;
+  width: 1rem;
+  stroke-width: 3;
 }
 .review-container {
   display: flex;
