@@ -26,10 +26,6 @@ p,
 pre {
   margin: 0px;
 }
-img{
-  max-width:100%;
-  height: auto;
-}
 ul {
   display: flex;
 }
@@ -1445,13 +1441,19 @@ position: absolute;
   bottom: -250px;
   right: -220px;
 }
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+/*Ipad and surface PRo*/
+@media (max-width: 1024px){
+.row {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+/*TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
   body {
-    margin: 0 auto;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    max-width: 768px;
   }
   /*landing */
   h5,
@@ -1758,11 +1760,22 @@ position: absolute;
     margin-right: 35px;
     margin-left: 35px;
   }
-
-  .footer__bottom {
-    margin-left: 20px;
-    margin-right: 20px;
+.footer__description {
+    flex-wrap: wrap;
+    max-width: 65%;
+    height: auto;
+    margin: 0 auto;
   }
+  .footer__logo--container, .footer__logo--img, .footer__logo--name, .footer__copyright,
+  .footer__socials, .footer__socials a {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer__bottom {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
@@ -2032,6 +2045,9 @@ position: absolute;
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .test__para{
+    text-align: center;
+  }
   .test__description,
   .test__left--container,
   .test__right--container,
@@ -2055,12 +2071,20 @@ position: absolute;
   .test_review-row {
     display: inline;
   }
+  .cust__image-row {
+    width: 100%;}
+  .cust__img{
+    width: 50%;
+  }
+  .button__container{
+    width: 70%;
+  }
   .cust__container {
     width: 70%;
-    margin-left: 65px;
+    margin-left: 55px;
   }
   .cust__description {
-    max-width: 85%;
+    max-width: 100%;
     margin: o auto;
   }
   .cust__title {
@@ -2081,7 +2105,6 @@ position: absolute;
     width: 100%;
     height: auto;
   }
-
   .question {
     font-size: 28px;
   }
