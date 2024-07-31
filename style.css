@@ -487,7 +487,9 @@ h5:hover {
 }
 .work__svg {
   position: absolute;
-  display: block;
+}
+.work__dotted--box{
+  position:relative;
 }
 .work__dotted--box {
   position: absolute;
@@ -1780,7 +1782,6 @@ position: absolute;
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
   body {
-    margin: 0 auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1799,7 +1800,7 @@ position: absolute;
     padding: 20px;
   }
   .row {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     width: 100%;
     flex-direction: column;
@@ -1960,6 +1961,9 @@ position: absolute;
   }
   .work__container--col2 {
     height: auto;
+  }
+  .work__dotted--box{
+    display: none;
   }
   .btn,
   .values__button {
