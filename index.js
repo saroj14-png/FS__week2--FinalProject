@@ -47,3 +47,13 @@ dropButtons.forEach(function (dropButton) {
     dropdownContent.classList.toggle("show");
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll("img, div, span, section"); // Add any elements you want to check
+  elements.forEach((element) => {
+    if (element.scrollWidth > document.documentElement.clientWidth) {
+      element.classList.add("highlight-overflow");
+    }
+  });
+});
