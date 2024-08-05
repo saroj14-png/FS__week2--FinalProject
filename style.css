@@ -4,8 +4,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-opacity: 1 ; 
-visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 html {
   scroll-behavior: smooth;
@@ -408,8 +408,8 @@ h5:hover {
     width: 100%;
   }
 }
-.features_svg{
-    position: relative;
+.features_svg {
+  position: relative;
 }
 .featured__img {
   pointer-events: none;
@@ -497,7 +497,7 @@ h5:hover {
 }
 .work__container--para,
 .values__para {
-  margin-top: 24px;
+  margin: 24px 0;
   font-weight: 500;
   line-height: 1.625;
   --tw-text-opacity: 1;
@@ -732,8 +732,7 @@ h5:hover {
   margin: 0 auto;
   animation: 2s 1 alternate right;
 }
-.pricing__para
-{
+.pricing__para {
   max-width: 1200px;
 }
 .pricing__description--container {
@@ -798,15 +797,10 @@ h5:hover {
 }
 .pricing__DecoratorBlob {
   position: absolute;
-      right: 1071px;
-    bottom: -189px;
+  right: 1071px;
+  bottom: -189px;
   height: 16rem;
   width: 16rem;
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-translate-y: 50%;
   opacity: 0.25;
   overflow: hidden;
   z-index: 20;
@@ -1264,7 +1258,6 @@ h5:hover {
 
 .starting__button--started:hover {
   background-color: #e84545;
-  
 }
 .starting__button--contact {
   border: 1px solid white;
@@ -1279,8 +1272,7 @@ h5:hover {
   font-size: 24px;
   cursor: pointer;
 }
-.starting__button--contact:hover
-{
+.starting__button--contact:hover {
   background-color: white;
   color: #6415ff;
 }
@@ -1289,12 +1281,14 @@ h5:hover {
   inset: 0px;
   overflow: hidden;
 }
-.GetStarted__DecoratorBlob1, .GetStarted__DecoratorBlob2, .footer__DecoratorBlob1,
-.footer__DecoratorBlob2{
-position: absolute;
+.GetStarted__DecoratorBlob1,
+.GetStarted__DecoratorBlob2,
+.footer__DecoratorBlob1,
+.footer__DecoratorBlob2 {
+  position: absolute;
   height: 20rem;
   width: 20rem;
-  opacity: 0.5;  
+  opacity: 0.5;
 }
 .GetStarted__DecoratorBlob1 {
   top: 220px;
@@ -1309,7 +1303,7 @@ position: absolute;
 .footer__container {
   padding: 78px 0;
   background-color: #6415ff;
-  margin:3rem -2rem -2rem -2rem; 
+  margin: 3rem -2rem -2rem -2rem;
   position: relative;
 }
 .footer__row {
@@ -1433,45 +1427,35 @@ position: absolute;
   bottom: -250px;
   right: -220px;
 }
-/*Ipad and surface PRo*/
-@media (max-width: 1024px){
-.row {
-    max-width: 1024px;
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: column;
-  }
-  ul {
-    display: none;
-  }
+.highlight-overflow {
+  outline: 2px solid red;
 }
-/*TABLETS, LARGE SMARTPHONES */
-@media (max-width: 768px) {
+/*Ipad and surface PRo*/
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
-    max-width: 768px;
+    max-width: 1024px;
   }
-  /*landing */
-  h5,
-  p,
-  h2 {
-    text-align: center;
+  .row {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   ul {
     display: none;
   }
   .row {
-    max-width: 760px;
-    margin: 0 auto;
+    max-width: 1024px;
     width: 100%;
-    flex-direction: column;
   }
-  .nav__container {
-    width: 672px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  .logo__text {
-    font-size: 1.2rem; 
+  .header__container--heading, .header__container--col2  {
+    max-width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;}
+  
+  .header__inside {
+    width: 100%;
   }
   /*hamburger menu */
   .btn__menu {
@@ -1527,6 +1511,77 @@ position: absolute;
     color: white;
   }
   /*--------------------*/
+  .header {
+    padding: 3rem 0;
+    flex-direction: column;
+  }
+  .main__container--heading,
+  .pricing__subtitle,
+  .values__para,
+  .pricing__subtitle .features__container--heading {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .work__container--heading,
+  .steps__container--heading,
+  .values__sub-title,
+  .faqs__description--heading,
+  .features__container--heading,
+  .pricing__subtitle,
+  .steps__sub-title,
+  .test__sub-title {
+    font-size: 2rem;
+  }
+  /*features*/
+  .icons {
+    width: 1rem;
+    height: 1rem;
+  }
+  .service {
+    width: 90%;
+  }
+  .work__container--col1 {
+    margin-right: 20px;
+  }
+  /*Pricing*/
+  .plans__container{
+    flex-direction: column;
+  }
+  .plan__container--left, .plan__container--right, .plan__container--center {
+    width: 100%;}
+ /*FAQ*/
+  .faq__DecoratorBlob-container, .work__svg {
+    display: none;
+  }
+}
+/*TABLETS, LARGE SMARTPHONES */
+@media (min-width: 550px) and(max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  /*landing */
+  h5,
+  p,
+  h2 {
+    text-align: center;
+  }
+  ul {
+    display: none;
+  }
+  .row {
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav__container {
+    width: 672px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .logo__text {
+    font-size: 1.2rem;
+  }
   .header {
     flex-direction: column;
     padding-top: 1rem;
@@ -1755,14 +1810,18 @@ position: absolute;
     margin-right: 35px;
     margin-left: 35px;
   }
-.footer__description {
+  .footer__description {
     flex-wrap: wrap;
     max-width: 65%;
     height: auto;
     margin: 0 auto;
   }
-  .footer__logo--container, .footer__logo--img, .footer__logo--name, .footer__copyright,
-  .footer__socials, .footer__socials a {
+  .footer__logo--container,
+  .footer__logo--img,
+  .footer__logo--name,
+  .footer__copyright,
+  .footer__socials,
+  .footer__socials a {
     margin: 0 auto;
     text-align: center;
   }
@@ -1770,7 +1829,6 @@ position: absolute;
     max-width: 80%;
     margin: 0 auto;
   }
-  
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
@@ -1955,7 +2013,7 @@ position: absolute;
   .work__container--col2 {
     height: auto;
   }
-  .work__dotted--box{
+  .work__dotted--box {
     display: none;
   }
   .btn,
@@ -2042,7 +2100,7 @@ position: absolute;
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .test__para{
+  .test__para {
     text-align: center;
   }
   .test__description,
@@ -2069,11 +2127,12 @@ position: absolute;
     display: inline;
   }
   .cust__image-row {
-    width: 100%;}
-  .cust__img{
+    width: 100%;
+  }
+  .cust__img {
     width: 50%;
   }
-  .button__container{
+  .button__container {
     width: 70%;
   }
   .cust__container {
@@ -2088,6 +2147,9 @@ position: absolute;
     margin-top: 0px;
   }
   /*FAQ */
+  .faq__DecoratorBlob-container, .work__svg, .footer__DecoratorBlob2 {
+    display: none;
+  }
   .faqs__description {
     padding-top: 60px;
     margin: 0 auto;
@@ -2123,18 +2185,25 @@ position: absolute;
     padding: 20px 20px;
     margin-bottom: 20px;
   }
-  .steps__DecoratorBlob, .GetStarted__DecoratorBlob1, .GetStarted__DecoratorBlob2, .features_svg {
+  .steps__DecoratorBlob,
+  .GetStarted__DecoratorBlob1,
+  .GetStarted__DecoratorBlob2,
+  .features_svg {
     display: none;
   }
   /*footer*/
-.footer__description {
+  .footer__description {
     flex-wrap: wrap;
     max-width: 85%;
     height: auto;
     margin: 0 auto;
   }
-  .footer__logo--container, .footer__logo--img, .footer__logo--name, .footer__copyright,
-  .footer__socials, .footer__socials a {
+  .footer__logo--container,
+  .footer__logo--img,
+  .footer__logo--name,
+  .footer__copyright,
+  .footer__socials,
+  .footer__socials a {
     margin: 0 auto;
     text-align: center;
   }
