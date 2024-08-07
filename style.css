@@ -281,8 +281,7 @@ h5:hover {
 }
 /*-------------------------------------------Features--------------------------------*/
 .features {
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding:80px 0;
   animation: slideright 2s ease-in-out;
 }
 .features__container--title,
@@ -431,7 +430,7 @@ h5:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-content: center;
+  padding: 50px 0;
 }
 .work__img {
   position: relative;
@@ -446,6 +445,7 @@ h5:hover {
 .values__title {
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  line-height: 36px;
   opacity: 1;
 }
 .work__container--heading,
@@ -474,8 +474,8 @@ h5:hover {
 }
 .work__container--col2 {
   width: 45%;
-  height: auto; 
-    align-self: center;
+  height: auto;
+  align-self: center;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -489,7 +489,7 @@ h5:hover {
   position: absolute;
   overflow: hidden;
   left: -74px;
-    top: 122px;
+  top: 122px;
   height: 5rem;
   width: 5rem;
   fill: currentcolor;
@@ -508,7 +508,6 @@ h5:hover {
 /*------------------------------------------------- Steps--------------------------------*/
 .steps__container {
   padding-bottom: 144px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1442,17 +1441,15 @@ h5:hover {
   ul {
     display: none;
   }
-  .row {
-    max-width: 1024px;
-    width: 100%;
-  }
-  .header__container--heading, .header__container--col2  {
+  .header__container--heading,
+  .header__container--col2 {
     max-width: 100%;
     font-size: 2rem;
     text-align: center;
     align-items: center;
-    margin: 0 auto;}
-  
+    margin: 0 auto;
+  }
+
   .header__inside {
     width: 100%;
   }
@@ -1509,20 +1506,61 @@ h5:hover {
     padding: 8px;
     color: white;
   }
-  /*--------------------*/
-  .header, .quality__work{
-    padding: 3rem 0;
+  /*---------Work-----------*/
+  .header,
+  .quality__work {
     flex-direction: column;
-    width:85%;
     margin: 0 auto;
   }
-  .work__container--col2{
-    padding-top: 20px;
+  .work__container--col2 {
+    padding: 20px 0;
   }
-.work__container--col1{
-  margin-right: 0px;
-  width:90%;
+  .work__container--col1 ,  {
+    margin-right: 0px;
+    width: 100%;
+    align-items: center;
+  }
+  /*---------steps-----------*/
+  .steps__container , .values__container, .testimonial__container{
+    display: block;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+.right__column--container {
+    width: 100%;
+  padding-bottom: 150px;
 }
+   .steps__DecoratorBlob {
+    right: 205px;
+    bottom: 28px;}
+    .left__column--container {
+      align-items: center;
+    margin:0 auto;
+    width: 100%;}
+.steps__container{
+  padding-bottom: 50px;
+}
+.steps__Ul {
+  margin-top: 0;}
+/*---------Values-----------*/
+.values__left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .values__text--container
+  {
+    align-items: center;
+    margin: 0 aut0;
+  }
+.values__right{
+  padding:20px 0;
+}
+  /*---------Pricing-----------*/
+  .pricing__subtitle, .pricing__para, .pricing__title {
+    display: block;
+  text-align: center;
+  }
   .main__container--heading,
   .pricing__subtitle,
   .values__para,
@@ -1548,15 +1586,32 @@ h5:hover {
   .service {
     width: 90%;
   }
-  
-  /*Pricing*/
-  .plans__container{
-    flex-direction: column;
+.service__column {
+    padding: 1rem 0.5rem
   }
-  .plan__container--left, .plan__container--right, .plan__container--center {
-    width: 100%;}
- /*FAQ*/
-  .faq__DecoratorBlob-container, .work__svg {
+  /*Pricing*/
+  .plans__container {
+   display: block;
+    margin: 40px 0;
+  }
+  .plan__container--left,
+  .plan__container--right,
+  .plan__container--center {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .pricing__row {
+    padding: 40px 0;
+    /*testimonial*/
+    .test__right--container {
+    padding-left: 0rem; 
+    width: 544px;
+    width: 90%;
+    margin: 0 auto;}
+    
+  /*FAQ*/
+  .faq__DecoratorBlob-container,
+  .work__svg {
     display: none;
   }
 }
@@ -2153,7 +2208,9 @@ h5:hover {
     margin-top: 0px;
   }
   /*FAQ */
-  .faq__DecoratorBlob-container, .work__svg, .footer__DecoratorBlob2 {
+  .faq__DecoratorBlob-container,
+  .work__svg,
+  .footer__DecoratorBlob2 {
     display: none;
   }
   .faqs__description {
