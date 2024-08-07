@@ -1428,9 +1428,7 @@ h5:hover {
   bottom: -250px;
   right: -220px;
 }
-.highlight-overflow {
-  outline: 2px solid red;
-}
+
 /*Ipad and surface PRo*/
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
