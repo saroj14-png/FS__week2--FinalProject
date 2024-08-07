@@ -459,7 +459,7 @@ h5:hover {
   font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(36 62 99 / var(--tw-text-opacity));
-  line-height: 108px;
+  line-height: 1.25;
   font-size: 3rem;
 }
 .work__container--col1 {
@@ -468,13 +468,14 @@ h5:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 50%;
+  width: 40%;
   margin-right: 90px;
   position: relative;
 }
 .work__container--col2 {
-  width: 50%;
-  height: 1000px;
+  width: 45%;
+  height: auto; 
+    align-self: center;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -487,8 +488,8 @@ h5:hover {
 .work__dotted--box {
   position: absolute;
   overflow: hidden;
-  left: -138px;
-  top: 122px;
+  left: -74px;
+    top: 122px;
   height: 5rem;
   width: 5rem;
   fill: currentcolor;
@@ -1511,10 +1512,19 @@ h5:hover {
     color: white;
   }
   /*--------------------*/
-  .header {
+  .header, .quality__work{
     padding: 3rem 0;
     flex-direction: column;
+    width:85%;
+    margin: 0 auto;
   }
+  .work__container--col2{
+    padding-top: 20px;
+  }
+.work__container--col1{
+  margin-right: 0px;
+  width:90%;
+}
   .main__container--heading,
   .pricing__subtitle,
   .values__para,
@@ -1540,9 +1550,7 @@ h5:hover {
   .service {
     width: 90%;
   }
-  .work__container--col1 {
-    margin-right: 20px;
-  }
+  
   /*Pricing*/
   .plans__container{
     flex-direction: column;
