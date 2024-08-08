@@ -281,7 +281,7 @@ h5:hover {
 }
 /*-------------------------------------------Features--------------------------------*/
 .features {
-  padding:80px 0;
+  padding: 80px 0;
   animation: slideright 2s ease-in-out;
 }
 .features__container--title,
@@ -1449,7 +1449,9 @@ h5:hover {
     align-items: center;
     margin: 0 auto;
   }
-
+.header{
+  padding-top: 4rem;
+}
   .header__inside {
     width: 100%;
   }
@@ -1511,55 +1513,69 @@ h5:hover {
   .quality__work {
     flex-direction: column;
     margin: 0 auto;
+    width: 90%;
   }
   .work__container--col2 {
     padding: 20px 0;
   }
-  .work__container--col1 ,  {
+  .work__container--col1 {
     margin-right: 0px;
     width: 100%;
     align-items: center;
   }
   /*---------steps-----------*/
-  .steps__container , .values__container, .testimonial__container{
+  .steps__container,
+  .values__container,
+  .testimonial__container {
     display: block;
     padding: 20px 0;
     margin: 0 auto;
   }
-.right__column--container {
+  .right__column--container {
     width: 100%;
-  padding-bottom: 150px;
-}
-   .steps__DecoratorBlob {
+    padding-bottom: 150px;
+  }
+  .steps__DecoratorBlob {
     right: 205px;
-    bottom: 28px;}
-    .left__column--container {
-      align-items: center;
-    margin:0 auto;
-    width: 100%;}
-.steps__container{
-  padding-bottom: 50px;
-}
-.steps__Ul {
-  margin-top: 0;}
-/*---------Values-----------*/
-.values__left {
+    bottom: 28px;
+  }
+  .left__column--container {
+    align-items: center;
+    margin: 0 auto;
     width: 100%;
+  }
+  .steps__container {
+    padding-bottom: 50px;
+  }
+  .steps__Ul {
+    margin-top: 0;
+  }
+  /*---------Values-----------*/
+  .values__left {
+    width: 90%;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
   }
-  .values__text--container
-  {
+  .values__text--container {
     align-items: center;
     margin: 0 aut0;
   }
-.values__right{
-  padding:20px 0;
-}
+  .values__list--container{
+    margin: 0 auto;
+  }
+  .values__right {
+    padding: 20px 0;
+    width:100%;
+  }
+  .values__affordable, .values__professional {
+    margin: 1rem;}
   /*---------Pricing-----------*/
-  .pricing__subtitle, .pricing__para, .pricing__title {
+  .pricing__subtitle,
+  .pricing__para,
+  .pricing__title, .test__title, .test__sub-title, .test__para {
     display: block;
-  text-align: center;
+    text-align: center;
   }
   .main__container--heading,
   .pricing__subtitle,
@@ -1586,12 +1602,12 @@ h5:hover {
   .service {
     width: 90%;
   }
-.service__column {
-    padding: 1rem 0.5rem
+  .service__column {
+    padding: 1rem 0.5rem;
   }
   /*Pricing*/
   .plans__container {
-   display: block;
+    display: block;
     margin: 40px 0;
   }
   .plan__container--left,
@@ -1602,18 +1618,56 @@ h5:hover {
   }
   .pricing__row {
     padding: 40px 0;
-    /*testimonial*/
-    .test__right--container {
-    padding-left: 0rem; 
-    width: 544px;
-    width: 90%;
-    margin: 0 auto;}
-    
+  }
+  /*testimonial*/
+  .test__right--container {
+    width: 80%;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .test__left--container {
+    width: 80%;
+    margin: 0 auto;
+  }
   /*FAQ*/
+  .faqs__collapsible {
+    width: 90%;
+    height: auto;
+  }
+  .faqs__description--para {
+    width: 80%;
+  }
   .faq__DecoratorBlob-container,
   .work__svg {
     display: none;
   }
+  /*starting*/
+  .starting__container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .starting__description{
+    margin-top: 0;
+    display: block;
+    width: 90%;
+  }
+  .description__title--wrapper {
+    width: 90%;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+.starting__button--container{
+  margin: 0 auto;
+  width:100%;
+  padding-bottom: 20px;
+}
+/*footer*/
+.footer__row
+{
+  width:90%;
+}
 }
 /*TABLETS, LARGE SMARTPHONES */
 @media (min-width: 550px) and(max-width: 768px) {
@@ -2291,4 +2345,8 @@ h5:hover {
   .footer__socials a {
     max-width: 40px;
   }
+}
+
+.highlight-overflow {
+  outline: 2px solid red;
 }
