@@ -1432,6 +1432,7 @@ h5:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     max-width: 1024px;
+    min-width: 768px;
   }
   .row {
     max-width: 100%;
@@ -1535,9 +1536,8 @@ h5:hover {
     width: 100%;
     padding-bottom: 150px;
   }
-  .steps__DecoratorBlob {
-    right: 205px;
-    bottom: 28px;
+  .steps__DecoratorBlob, .work__dotted--box  {
+    display: none;
   }
   .left__column--container {
     align-items: center;
@@ -1660,13 +1660,17 @@ h5:hover {
 }
 .starting__button--container{
   margin: 0 auto;
-  width:100%;
   padding-bottom: 20px;
 }
 /*footer*/
 .footer__row
 {
   width:90%;
+}
+.footer__description{
+  height: auto;
+  width: 75%;
+  margin: 0 auto;
 }
 }
 /*TABLETS, LARGE SMARTPHONES */
@@ -2346,7 +2350,7 @@ h5:hover {
     max-width: 40px;
   }
 }
-
+/*
 .highlight-overflow {
   outline: 2px solid red;
-}
+}*/
