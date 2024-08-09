@@ -1407,6 +1407,24 @@ h5:hover {
   overflow: hidden;
   border-radius: 0.5rem;
 }
+.footer__bottom
+{
+   flex-wrap: wrap;
+    width: 70%;
+    padding: 0 25px;
+    margin: 0 auto;
+    margin: 0 auto;
+}
+.footer__logo--container,
+  .footer__logo--img,
+  .footer__logo--name,
+  .footer__copyright,
+  .footer__socials,
+  .footer__socials a {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+  }
 .footer__DecoratorBlob1 {
   top: -210px;
   left: -120px;
@@ -1415,7 +1433,6 @@ h5:hover {
   bottom: -250px;
   right: -220px;
 }
-
 /*Ipad and surface PRo*/
 @media screen and (max-width: 1024px) {
   body {
@@ -1431,7 +1448,7 @@ h5:hover {
     display: none;
   }
   .header__container--heading,
-  .header__container--col2 {
+  .header__container--col2,  .header__container--col1, .header__inside {
     max-width: 100%;
     font-size: 2rem;
     text-align: center;
@@ -1609,6 +1626,7 @@ h5:hover {
   .plan__container--center {
     width: 100%;
     margin: 0 auto;
+    margin: 30px 50px;
   }
   .pricing__row {
     padding: 40px 0;
@@ -1942,9 +1960,13 @@ h5:hover {
   .footer__socials a {
     margin: 0 auto;
     text-align: center;
+    padding: 10px 0;
   }
   .footer__bottom {
-    max-width: 80%;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 0 25px;
+    margin: 0 auto;
     margin: 0 auto;
   }
 }
