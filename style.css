@@ -1701,6 +1701,9 @@ h5:hover {
   .logo__text {
     font-size: 1.2rem;
   }
+  .btn__menu{
+    display: block;
+  }
   .header {
     flex-direction: column;
     padding-top: 1rem;
