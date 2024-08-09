@@ -41,11 +41,7 @@ a {
 button {
   cursor: pointer;
 }
-.blob {
-  overflow: hidden;
-  display: block;
-}
-svg {
+.blob, svg {
   overflow: hidden;
   display: block;
 }
@@ -161,22 +157,14 @@ h5:hover {
   padding-bottom: 6rem;
 }
 .header__container--heading {
-  max-width: 486px;
-}
-.header__container--heading,
-.main__container--heading {
+  max-width: 82%;
   font-size: 3rem;
   opacity: 1;
   margin-bottom: 0;
   font-weight: 700;
   line-height: 1.25;
 }
-.header__container--col1 {
-  text-align: left;
-  margin: 0;
-  height: auto;
-  position: relative;
-}
+
 .header__container--col2 {
   width: 58%;
   position: relative;
@@ -1429,7 +1417,7 @@ h5:hover {
 }
 
 /*Ipad and surface PRo*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   body {
     max-width: 1024px;
     min-width: 768px;
@@ -1450,9 +1438,9 @@ h5:hover {
     align-items: center;
     margin: 0 auto;
   }
-.header{
-  padding-top: 4rem;
-}
+  .header {
+    padding-top: 4rem;
+  }
   .header__inside {
     width: 100%;
   }
@@ -1536,7 +1524,8 @@ h5:hover {
     width: 100%;
     padding-bottom: 150px;
   }
-  .steps__DecoratorBlob, .work__dotted--box  {
+  .steps__DecoratorBlob,
+  .work__dotted--box {
     display: none;
   }
   .left__column--container {
@@ -1561,19 +1550,24 @@ h5:hover {
     align-items: center;
     margin: 0 aut0;
   }
-  .values__list--container{
+  .values__list--container {
     margin: 0 auto;
   }
   .values__right {
     padding: 20px 0;
-    width:100%;
+    width: 100%;
   }
-  .values__affordable, .values__professional {
-    margin: 1rem;}
+  .values__affordable,
+  .values__professional {
+    margin: 1rem;
+  }
   /*---------Pricing-----------*/
   .pricing__subtitle,
   .pricing__para,
-  .pricing__title, .test__title, .test__sub-title, .test__para {
+  .pricing__title,
+  .test__title,
+  .test__sub-title,
+  .test__para {
     display: block;
     text-align: center;
   }
@@ -1648,7 +1642,7 @@ h5:hover {
     margin: 0 auto;
     padding: 40px 0;
   }
-  .starting__description{
+  .starting__description {
     margin-top: 0;
     display: block;
     width: 90%;
@@ -1657,24 +1651,23 @@ h5:hover {
     width: 90%;
     padding: 80px 0;
     margin: 0 auto;
-}
-.starting__button--container{
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-/*footer*/
-.footer__row
-{
-  width:90%;
-}
-.footer__description{
-  height: auto;
-  width: 75%;
-  margin: 0 auto;
-}
+  }
+  .starting__button--container {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  /*footer*/
+  .footer__row {
+    width: 90%;
+  }
+  .footer__description {
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 /*TABLETS, LARGE SMARTPHONES */
-@media (min-width: 550px) and(max-width: 768px) {
+@media (max-width: 768px) {
   body {
     max-width: 768px;
   }
@@ -1694,20 +1687,23 @@ h5:hover {
     flex-direction: column;
   }
   .nav__container {
-    width: 672px;
+    width: 90%;
     margin: 0 auto;
     padding: 2rem;
   }
   .logo__text {
     font-size: 1.2rem;
   }
-  .btn__menu{
+  .btn__menu {
     display: block;
   }
   .header {
     flex-direction: column;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+   button .header__button{
+    padding: 1.25rem 12rem 1.25rem 2rem;
   }
   .header__container--col1,
   .header__container--col2,
@@ -1992,6 +1988,9 @@ h5:hover {
   }
   .logo__text {
     font-size: 1.2rem; /* Adjust the font size of the logo text */
+  }
+  .btn__menu {
+    display: block;
   }
   /*--------------------*/
   .header {
