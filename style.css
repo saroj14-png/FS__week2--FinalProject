@@ -41,7 +41,8 @@ a {
 button {
   cursor: pointer;
 }
-.blob, svg {
+.blob,
+svg {
   overflow: hidden;
   display: block;
 }
@@ -275,21 +276,26 @@ h5:hover {
 .features__container--title,
 .features__container--heading,
 .features__container--para,
-.pricing__title,
+.pricing__container--title,
 .pricing__subtitle,
-.pricing__para {
+.pricing__para,
+.faqs__conatainer--title {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 .features__container--title,
-.pricing__title {
+.work__container--title,
+.steps__container--title,
+.values__container--title,
+.pricing__container--title,
+.test__container--title,
+.faqs__conatainer--title {
   letter-spacing: 5px;
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-  text-transform: uppercase;
   opacity: 1;
 }
 .features__container--para {
@@ -429,13 +435,7 @@ h5:hover {
   border-color: rgb(222, 223, 226);
   display: flex;
 }
-.work__container--title,
-.values__title {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  line-height: 36px;
-  opacity: 1;
-}
+
 .work__container--heading,
 .steps__container--heading,
 .values__sub-title,
@@ -504,14 +504,7 @@ h5:hover {
   margin-top: 0;
   animation: slideleft 2s ease-in-out;
 }
-.steps__title,
-.test__title,
-.faqs__description--title {
-  letter-spacing: 5px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-}
+
 .steps__sub-title,
 .test__sub-title {
   margin: 24px 0;
@@ -1050,6 +1043,7 @@ h5:hover {
   flex-direction: column;
   width: 50%;
   cursor: pointer;
+  max-width: 100%;
 }
 .pointer {
   stroke-width: 3;
@@ -1058,6 +1052,8 @@ h5:hover {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
 }
 .review {
   display: none;
@@ -1407,24 +1403,23 @@ h5:hover {
   overflow: hidden;
   border-radius: 0.5rem;
 }
-.footer__bottom
-{
-   flex-wrap: wrap;
-    width: 70%;
-    padding: 0 25px;
-    margin: 0 auto;
-    margin: 0 auto;
+.footer__bottom {
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 0 25px;
+  margin: 0 auto;
+  margin: 0 auto;
 }
 .footer__logo--container,
-  .footer__logo--img,
-  .footer__logo--name,
-  .footer__copyright,
-  .footer__socials,
-  .footer__socials a {
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px 0;
-  }
+.footer__logo--img,
+.footer__logo--name,
+.footer__copyright,
+.footer__socials,
+.footer__socials a {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+}
 .footer__DecoratorBlob1 {
   top: -210px;
   left: -120px;
@@ -1448,7 +1443,9 @@ h5:hover {
     display: none;
   }
   .header__container--heading,
-  .header__container--col2,  .header__container--col1, .header__inside {
+  .header__container--col2,
+  .header__container--col1,
+  .header__inside {
     max-width: 100%;
     font-size: 2rem;
     text-align: center;
@@ -1539,7 +1536,7 @@ h5:hover {
   }
   .right__column--container {
     width: 100%;
-    padding-bottom: 150px;
+    padding: 100px 100px 50px 100px;
   }
   .steps__DecoratorBlob,
   .work__dotted--box {
@@ -1614,6 +1611,7 @@ h5:hover {
     width: 90%;
   }
   .service__column {
+    width: 100%;
     padding: 1rem 0.5rem;
   }
   /*Pricing*/
@@ -1720,7 +1718,7 @@ h5:hover {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-   button .header__button{
+  button .header__button {
     padding: 1.25rem 12rem 1.25rem 2rem;
   }
   .header__container--col1,
@@ -2319,7 +2317,7 @@ h5:hover {
   }
   .starting__title {
     font-size: 1rem;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 15px 0;
   }
