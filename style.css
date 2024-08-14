@@ -1431,11 +1431,13 @@ h5:hover {
 /*Ipad and surface PRo*/
 @media screen and (max-width: 1024px) {
   body {
+    max-width: 1024px;
+    min-width: 768px;
     
-    margin: 0  auto;
   }
   .row {
-    max-width: 100%;
+    width: 100%;
+    margin: 0  auto;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -2386,7 +2388,7 @@ h5:hover {
     max-width: 40px;
   }
 }
-/*
+
 .highlight-overflow {
   outline: 2px solid red;
-}*/
+}
