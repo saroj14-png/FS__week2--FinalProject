@@ -1431,8 +1431,8 @@ h5:hover {
 /*Ipad and surface PRo*/
 @media screen and (max-width: 1024px) {
   body {
-    max-width: 1024px;
-    min-width: 768px;
+    
+    margin: 0  auto;
   }
   .row {
     max-width: 100%;
