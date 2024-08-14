@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   showReview(currentReview);
 });
+
+
 /*----------------------------------------drop down faq-question-------------------------*/
 const questions = document.querySelectorAll(".dropbtn");
 const answers = document.querySelectorAll(".dropdown-content");
