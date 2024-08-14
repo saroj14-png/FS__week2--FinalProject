@@ -1431,14 +1431,12 @@ h5:hover {
 /*Ipad and surface PRo*/
 @media screen and (max-width: 1024px) {
   body {
-    max-width: 100%;
-    min-width: 768px;
     align-content: center;
     overflow-x: hidden;
+    box-sizing: border-box;
   }
   .row {
     width: 100%;
-    margin: 0  auto;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -1702,12 +1700,18 @@ h5:hover {
 /*TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
   body {
-   max-width: 100%;
-    min-width: 550px;
     align-content: center;
     overflow-x: hidden;
+    box-sizing: border-box;
   }
+  
   /*landing */
+   .row {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
   h5,
   p,
   h2 {
@@ -1715,12 +1719,6 @@ h5:hover {
   }
   ul {
     display: none;
-  }
-  .row {
-    max-width: 760px;
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: column;
   }
   .nav__container {
     width: 90%;
@@ -1991,10 +1989,14 @@ h5:hover {
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
   body {
-   max-width: 100%;
-    min-width: 350px;
     align-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+   .row {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   /*landing */
   h5,
