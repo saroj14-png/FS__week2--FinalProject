@@ -1431,9 +1431,10 @@ h5:hover {
 /*Ipad and surface PRo*/
 @media screen and (max-width: 1024px) {
   body {
-    max-width: 1024px;
+    max-width: 100%;
     min-width: 768px;
     align-content: center;
+    overflow-x: hidden;
   }
   .row {
     width: 100%;
@@ -1701,9 +1702,10 @@ h5:hover {
 /*TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
   body {
-    max-width: 768px;
+   max-width: 100%;
     min-width: 550px;
     align-content: center;
+    overflow-x: hidden;
   }
   /*landing */
   h5,
