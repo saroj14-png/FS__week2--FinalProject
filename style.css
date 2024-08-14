@@ -1433,7 +1433,7 @@ h5:hover {
   body {
     max-width: 1024px;
     min-width: 768px;
-    
+    align-content: center;
   }
   .row {
     width: 100%;
@@ -1702,6 +1702,8 @@ h5:hover {
 @media (max-width: 768px) {
   body {
     max-width: 768px;
+    min-width: 550px;
+    align-content: center;
   }
   /*landing */
   h5,
