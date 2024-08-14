@@ -1991,9 +1991,10 @@ h5:hover {
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
   body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   max-width: 100%;
+    min-width: 350px;
+    align-content: center;
+    overflow-x: hidden;
   }
   /*landing */
   h5,
